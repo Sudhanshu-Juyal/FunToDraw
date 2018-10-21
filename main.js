@@ -37,7 +37,7 @@ function draw(e)
 	mouseX=e.offsetX;
     mouseY=e.offsetY;
     hue=hue+1;
-    if(hue>=800)
+    if(hue>=600)
     {
     	hue=0;
     }
@@ -73,3 +73,20 @@ canvas.addEventListener('mouseout',function()
 {
 drawing=false;
 });
+
+// in case of mobile  Interface
+
+/*function touchHandler(event)
+{
+    var touches = event.changedTouches,
+        first = touches[0],
+      }
+      function 
+
+function init() 
+{
+    document.addEventListener("touchstart", touchHandler, true);
+    document.addEventListener("touchmove", touchHandler, true);
+    document.addEventListener("touchend", touchHandler, true);
+    document.addEventListener("touchcancel", touchHandler, true);    
+}*/
